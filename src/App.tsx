@@ -1,20 +1,14 @@
 import { Authenticator } from '@aws-amplify/ui-react'
 import './App.css'
+import RecipeList from './components/recipes/RecipeList'
 
 function App() {
 
   return (
-    <>
       <Authenticator>
-        {({ signOut, user}) => (
-          <>
-            <p>Welcome to our React App!!</p>
-            <p>{user?.userId}, you are signed in!</p>
-            <button onClick={signOut}>Sign out</button>
-          </>
-        )}
+        <h1>Recipes</h1>
+            <RecipeList />
       </Authenticator>
-    </>
   )
 }
 

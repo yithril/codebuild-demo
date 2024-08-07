@@ -2,7 +2,7 @@ import { fetchAuthSession } from 'aws-amplify/auth';
 import axios from 'axios';
 
 const recipeApiInstance = axios.create({
-    baseURL: 'https://p67k05629f.execute-api.us-east-2.amazonaws.com/dev/'
+    baseURL: 'https://p67k05629f.execute-api.us-east-2.amazonaws.com/dev/api'
 });
 
 recipeApiInstance.interceptors.request.use(async (config) => {
@@ -22,3 +22,5 @@ recipeApiInstance.interceptors.request.use(async (config) => {
   }, (error) => {
     return Promise.reject(error);
   });
+
+export default recipeApiInstance;
