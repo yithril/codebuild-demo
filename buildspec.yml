@@ -14,6 +14,7 @@ phases:
   pre_build:
     commands:
       - echo Running pre-build steps...
+      - echo $VITE_API_KEY
   build:
     commands:
       - echo Building the Vite React app...
