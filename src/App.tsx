@@ -6,7 +6,7 @@ function App() {
 
   return (
       <Authenticator>
-        <h1>Recipes For The Whole Family</h1>
+        <h1>Recipes I Just Changed This</h1>
             <RecipeList />
       </Authenticator>
   )
