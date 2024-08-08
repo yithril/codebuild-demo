@@ -1,9 +1,5 @@
 version: 0.2
 
-env:
-  secrets-manager:
-    VITE_API_KEY: "arn:aws:secretsmanager:us-east-2:535146832369:secret:nutrition_api-xXnzCL"
-
 phases:
   install:
     runtime-versions:
