@@ -6,7 +6,7 @@ phases:
       nodejs: 22
     commands:
       - echo Installing dependencies...
-      - npm install --production
+      - npm install
   pre_build:
     commands:
       - echo Running pre-build steps...
